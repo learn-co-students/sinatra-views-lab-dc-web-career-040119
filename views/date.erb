@@ -1,0 +1,26 @@
+<% require 'date' %>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Date</title>
+
+
+    <% time = Date.today.strftime("%A, %B %d, %Y")%>
+
+    <h1>The date is <%=time%></h1>
+      <p>%></p>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+%A %B %e %Y
+Using ERB tags, and the DateTime library, display today's date in a p tag. The date should be formatted to look something like this The date is Wednesday, November 18, 2015.
+
+
+<%time = Date.today.strftime("%A, %B %d, %Y")%>
+
+<h1>The date is <%=time%></h1>
